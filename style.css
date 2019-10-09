@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
 	font-size: 62.5%;
 	line-height: 2;
@@ -92,9 +98,17 @@ header h2 {
 #news h1{
     color: #000;
     margin-top: 200px;
+    margin-bottom: 80px;
     font-size: 50px;
     font-family: 'Notable', sans-serif;
 }
+
+#news p1{
+  display: block;
+  font-size: 15px;
+  line-height: 40px;
+  
+  }
 
          /*ABOUT*/
 #about h1{
@@ -117,10 +131,108 @@ header h2 {
     font-family: 'Notable', sans-serif;
 }
 
+#menber h2{
+    color: #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+      /*3回生*/
+.box-list{
+  list-style: none;
+  overflow: hidden;
+}
+.box-list li{
+  float: left;
+  border:1px solid #ddd;
+  width: 19%;
+  margin-bottom: 1%;
+  margin-right: 1.25%;
+}
+ul li:last-child{
+  margin-right:0;
+}
+img{
+  width: 100%
+}
+     /*2回生*/
+.box-list2{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.box-list2 li{
+  float: left;
+  border:1px solid #ddd;
+  width: 19%;
+  margin-bottom: 1%;
+  margin-right: 1.25%;
+}
+.box-list2-1{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.box-list2-1 li{
+  float: left;
+  border:1px solid #ddd;
+  width: 19%;
+  margin-bottom: 1%;
+  margin-right: 1.25%;
+}
+ul li:last-child{
+  margin-right:0;
+}
+img{
+  width: 100%
+}
+     /*1回生*/
+.box-list3{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.box-list3 li{
+  float: left;
+  border:1px solid #ddd;
+  width: 19%;
+  margin-bottom: 1%;
+  margin-right: 1.25%;
+}
+ul li:last-child{
+  margin-right:0;
+}
+img{
+  width: 100%
+}
+
+
         /*PHOTO*/
 #photo h1{
     color: #000;
     margin-top: 200px;
+    margin-bottom: 100px;
     font-size: 50px;
     font-family: 'Notable', sans-serif;
 }
+
+#container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1300px;
+    
+}
+.grid{
+    margin: 2px;
+    background: #ffb21a;
+    float: left;
+}
+.col1 {width: 230px;}
+.col2 {width: 480px;}
+.col3 {width: 300px;}
+.col4 {width: 580px;}
+

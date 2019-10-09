@@ -5,6 +5,22 @@
     <title>バレーボール部紹介</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+<script type="text/javascript" src="jquary.js"></script>
+<script type="text/javascript" src="masonry.pkgd.min.js"></script>
+<script>
+$(function(){
+    $('#container').masonry({
+        itemSelector: '.grid',//整理される要素のclassを指定
+        columnWidth: 200,     //一列の幅サイズを指定
+        isAnimated: true,     //スムースアニメーション設定
+        isFitWidth: true,     //親要素の幅サイズがピッタリ
+        isRTL: false,         //整理される要素が左右逆になる（読み言語などに）
+        gutterWidth: 0,       //整理される要素間の溝の幅を指定
+        containerStyle: { position: 'relative' }, //親要素にスタイルを追加できる
+        isResizable: true     //ウィンドウサイズが変更された時に並び替え
+    });
+});
+</script>
 </head>
 
 <body>
@@ -31,24 +47,142 @@
              <!--NEWS-->
  <div id="news">
      <h1>NEWS</h1>
+     <p1>2019.10.06　　  秋季リーグ　女子　順位決定戦進出決定</p1>
+     <p1>2019.09.30  　秋季リーグ　　女子　対大成大学　3-0勝</p1>
+     <p1>2019.9.27     秋季リーグ　女子　　対京都外国語大学3-0勝</p1>
+     
+     
      
  </div>
 </div>
              <!--About-->
 <div id="about">
       <h1>ABOUT</h1>
-      <h2>1週間の男女振り分け</h2>
+     
 </div>
              <!--Menber-->
 <div id="menber">
-     <h1>MENBER</h1>
+ <h1>MENBER</h1>
+ 　          <!--3年生-->
+ <h2>3回生</h2>
+<ul class="box-list">
+  <li>
+    <div><img src="image/menber01.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber04.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber03.JPG"></div>
+  </li>
+</ul>
+           <!--2年生-->
+ <h2>2回生</h2>
+<ul class="box-list2">
+  <li>
+    <div><img src="image/menber05.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber06.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber08.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber09.JPG"></div>
+  </li>
+</ul>
+<ul class="box-list2-1">
+   <li>
+    <div><img src="image/menber12.JPG"></div>
+  </li>
+</ul>
+          <!--1年生-->
+　<h2>1回生</h2>
+<ul class="box-list3">
+  <li>
+    <div><img src="image/menber02.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber10.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber07.JPG"></div>
+  </li>
+  <li>
+    <div><img src="image/menber11.JPG"></div>
+  </li>
+</ul>
+
 </div>
             
 <div id="photo">
+
      <h1>PHOTO</h1>
+     
 </div>
-              
-   
+<div id="container">
+    <div class="grid col1">
+        <img src="image/photo01.JPG" alt="">
+    </div>
+    <div class="grid col2">
+        <img src="image/photo02.JPG" alt="">
+    </div>
+    <div class="grid col1">
+        <img src="image/photo03.JPG" alt="">
+    </div>
+    <div class="grid col1">
+        <img src="image/photo06.JPG" alt="">
+    </div>
+    <div class="grid col3">
+        <img src="image/photo05.JPG" alt="">
+    </div>
     
+    <div class="grid col4">
+        <img src="image/photo07.JPG" alt="">
+    </div>
+    <div class="grid col1">
+        <img src="image/photo08.JPG" alt="">
+    </div>
+    <div class="grid col3">
+        <img src="image/photo09.JPG" alt="">
+    </div>
+    <div class="grid col1">
+        <img src="image/photo10.JPG" alt="">
+    </div>
+    <div class="grid col3">
+        <img src="image/photo11.JPG" alt="">
+    </div>
+    <div class="grid col2">
+        <img src="image/photo12.JPG" alt="">
+    </div>
+    <div class="grid col2">
+        <img src="image/photo13.JPG" alt="">
+    </div>
+    <div class="grid col1">
+        <img src="image/photo04.JPG" alt="">
+    </div>
+    <div class="grid col2">
+        <img src="image/photo14.JPG" alt="">
+    </div>
+    <div class="grid col2">
+        <img src="image/photo15.JPG" alt="">
+    </div>
+    <div class="grid col3">
+        <img src="image/photo18.JPG" alt="">
+    </div>
+    <div class="grid col4">
+        <img src="image/photo17.JPG" alt="">
+    </div>
+    <div class="grid col3">
+        <img src="image/photo19.JPG" alt="">
+    </div>
+    <div class="grid col3">
+        <img src="image/photo20.JPG" alt="">
+    </div>
+    
+</div>
+
+
 </body>
 </html>
