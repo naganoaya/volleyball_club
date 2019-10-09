@@ -29,11 +29,11 @@ $(function(){
   <header>
     <nav>
         <ul>
-            <li><a href="HOME">HOME</a></li>
-            <li><a href="NEWS">NEWS</a></li>
-            <li><a href="ABOUT">ABOUT</a></li>
-            <li><a href="MENBER">MENBER</a></li>
-            <li><a href="PHOTO">PHOTO</a></li>
+            <li><a href=".cover">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menber">MENBER</a></li>
+            <li><a href="#photo">PHOTO</a></li>
         </ul>
     </nav>
     <h2>大阪芸術大学</h2>
@@ -45,27 +45,27 @@ $(function(){
           <!--MAIN CONTAINER-->
 <div id="main" class="container">
              <!--NEWS-->
- <div id="news">
+ <div id="news" class="fadein">
      <h1>NEWS</h1>
-     <p1>2019.10.06　　  秋季リーグ　女子　順位決定戦進出決定</p1>
-     <p1>2019.09.30  　秋季リーグ　　女子　対大成大学　3-0勝</p1>
-     <p1>2019.9.27     秋季リーグ　女子　　対京都外国語大学3-0勝</p1>
+     <p1>2019.10.06　　 秋季リーグ　女子　順位決定戦進出決定</p1>
+     <p1>2019.09.30  　 秋季リーグ　　女子　対大成大学　3-0勝</p1>
+     <p1>2019.9.27  秋季リーグ　女子　　対京都外国語大学3-0勝</p1>
      
      
      
  </div>
 </div>
              <!--About-->
-<div id="about">
+<div id="about" class="fadein">
       <h1>ABOUT</h1>
      
 </div>
              <!--Menber-->
-<div id="menber">
+<div id="menber" class="fadein">
  <h1>MENBER</h1>
  　          <!--3年生-->
  <h2>3回生</h2>
-<ul class="box-list">
+<ul class="box-list fadein">
   <li>
     <div><img src="image/menber01.JPG"></div>
   </li>
@@ -78,7 +78,7 @@ $(function(){
 </ul>
            <!--2年生-->
  <h2>2回生</h2>
-<ul class="box-list2">
+<ul class="box-list2 fadein">
   <li>
     <div><img src="image/menber05.JPG"></div>
   </li>
@@ -92,14 +92,14 @@ $(function(){
     <div><img src="image/menber09.JPG"></div>
   </li>
 </ul>
-<ul class="box-list2-1">
+<ul class="box-list2-1 fadein">
    <li>
     <div><img src="image/menber12.JPG"></div>
   </li>
 </ul>
           <!--1年生-->
 　<h2>1回生</h2>
-<ul class="box-list3">
+<ul class="box-list3 fadein">
   <li>
     <div><img src="image/menber02.JPG"></div>
   </li>
@@ -116,12 +116,12 @@ $(function(){
 
 </div>
             
-<div id="photo">
+<div id="photo" class="fadein">
 
      <h1>PHOTO</h1>
      
 </div>
-<div id="container">
+<div id="container" class="fadein">
     <div class="grid col1">
         <img src="image/photo01.JPG" alt="">
     </div>
@@ -183,6 +183,12 @@ $(function(){
     
 </div>
 
+      <!--footer-->
+<footer>
+		<p>Osaka university of arts.volleyball</p>
+	</footer>
 
+<script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
 </body>
 </html>
