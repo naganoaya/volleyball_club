@@ -1,0 +1,126 @@
+html {
+	font-size: 62.5%;
+	line-height: 2;
+	font-family: 'Kosugi', sans-serif;YuGothic, sans-serif;
+	text-align: center;
+}
+
+
+body, figure{
+    margin: 0;
+}
+
+           /*header*/
+
+header{
+	position: relative;
+	height: 100vh;
+    margin: 0 auto;
+    background: url(image/background01.jpg) center / cover;
+}
+
+nav {
+  font-size: 23px;
+  z-index: 90;
+  position: absolute;
+  float: left;
+  margin-left: 700px;
+  overflow: hidden; 
+}
+
+nav li {
+    list-style-type: none;
+    float: left; 
+}
+
+nav li a {
+      text-decoration: none;
+      display: inline-block;
+      color: #fff;
+      margin: 10px; 
+      margin-right:20px;
+      font-family: 'Notable', sans-serif;
+}
+
+ nav li a:hover {
+        transition: 0.1s;
+        border-bottom: 3px solid #fff; 
+}
+
+.cover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,.2) radial-gradient(rgba(255,255,255,.3) 25%, transparent 0) center / 5px 5px;
+}
+
+header h1 {
+	position: absolute;
+	z-index: 1;
+	top: 55%;
+	width: 100%;
+	margin: 0;
+	padding: 0 .5em;
+	color: #fff;
+	font-size: 8rem;
+	line-height: 1.4;
+	font-family: fantasy;
+	letter-spacing: .1em;
+	transform: translateY(-50%);
+}
+
+header h2 {
+	position: absolute;
+	z-index: 1;
+	top: 40%;
+	width: 100%;
+	margin: 0;
+	padding: 0 .5em;
+	color: #fff;
+	font-size: 5rem;
+	line-height: 1.4;
+	font-family:fantasy;
+	letter-spacing: .1em;
+	transform: translateY(-50%);
+}
+
+         /*NEWS*/
+#news h1{
+    color: #000;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: 'Notable', sans-serif;
+}
+
+         /*ABOUT*/
+#about h1{
+    color: #000;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: 'Notable', sans-serif;
+}
+
+#about h2{
+    font-size: 30px;
+    
+}
+
+         /*MENBER*/
+#menber h1{
+    color: #000;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: 'Notable', sans-serif;
+}
+
+        /*PHOTO*/
+#photo h1{
+    color: #000;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: 'Notable', sans-serif;
+}
