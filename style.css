@@ -16,7 +16,10 @@ body, figure{
     margin: 0;
 }
 
-           /*header*/
+           /*背景*/
+
+
+          /*header*/
 
 header{
 	position: relative;
@@ -30,7 +33,7 @@ nav {
   z-index: 90;
   position: absolute;
   float: left;
-  margin-left: 700px;
+  margin-left: 800px;
   overflow: hidden; 
 }
 
@@ -43,9 +46,10 @@ nav li a {
       text-decoration: none;
       display: inline-block;
       color: #fff;
-      margin: 10px; 
+      margin: 20px; 
       margin-right:20px;
       font-family: 'Notable', sans-serif;
+      transition: 2s;
 }
 
  nav li a:hover {
@@ -53,7 +57,7 @@ nav li a {
         border-bottom: 3px solid #fff; 
 }
 
-.cover::after {
+#header::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -93,7 +97,7 @@ header h2 {
 	letter-spacing: .1em;
 	transform: translateY(-50%);
 }
-        /*fadein*/
+          /*JQ*/
 .fadein {
   opacity: 0;
   transform: translate(0, 50px);
@@ -115,7 +119,7 @@ header h2 {
 #news p1{
   display: block;
   font-size: 15px;
-  line-height: 40px;
+  line-height: 50px;
   
   }
 
@@ -129,7 +133,86 @@ header h2 {
 
 #about h2{
     font-size: 30px;
+    margin-top: 200px;
+}
+
+#about {
+  display: block;
+  
+ 
+}
+  
+#about h1 {
     
+    color: #000;
+    position: relative;
+    margin-top: 200px;
+    text-align: center; 
+}
+
+#about h2{
+    margin-top: 100px;
+}
+  
+#about .box-access {
+    width: 75%;
+    height: 50vh;
+    position: relative;
+    left: 12.5%;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.07); }
+   
+#about .box-access .left-access {
+      border-radius: 10px 0px 0px 10px;
+      width: 50%;
+      height: 100%;
+      float: left;
+      overflow: hidden; 
+}
+
+#about .box-access .right-access {
+      border-radius: 0px 10px 10px 0px;
+      background-color: #fff;
+      width: 50%;
+      height: 100%;
+      float: left; 
+}
+
+ 
+#about a {
+    display: block;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 14px;
+    margin: 0px 440px;
+    background-color: #182b2e;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 1s; 
+}
+    
+#about a:hover {
+      color: #182b2e;
+      border: 1px solid #182b2e;
+      background-color: #fff; 
+}
+
+#about .box-access .right-access .right-access-common h2 {
+          float: left;
+          display: block;
+          position: relative;
+          left: 18%;
+          line-height: 50px;
+          font-size: 30px; 
+          margin-top: 40px;
+}
+
+#about .box-access .right-access .right-access-common img{
+    margin-top: 40px;
 }
 
          /*MENBER*/
@@ -232,7 +315,7 @@ img{
 #container{
     margin: 0 auto;
     overflow: hidden;
-    width: 1300px;
+    width: 1200px;
     
 }
 .grid{
