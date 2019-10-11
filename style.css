@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+.all{
+    z-index: 999999999;
+    float: left;
+}
+
 html {
 	font-size: 62.5%;
 	line-height: 2;
@@ -14,6 +19,7 @@ html {
 
 body, figure{
     margin: 0;
+    
 }
 
            /*背景*/
@@ -23,9 +29,10 @@ body, figure{
 
 header{
 	position: relative;
+    width: 100%;
 	height: 100vh;
     margin: 0 auto;
-    background: url(image/background01.jpg) center / cover;
+/*    background: url(image/background01.jpg) center / cover;*/
 }
 
 nav {
@@ -99,18 +106,17 @@ header h2 {
 }
 
 #header #slide {
-  background-color: #000;
+  
   position: relative;
-  width: auto;
-  height: 100vh; 
+  width:100%;
 }
 
 #header #slide img {
-    height: 100%;
+    width:100%;
     overflow: hidden;
     position: absolute;
     left: 0;
-    top: 0; 
+    margin-top: 0px;
 }
 
 
@@ -124,7 +130,7 @@ header h2 {
   opacity: 1;
   transform: translate(0, 0); }
 
-         /*NEWS*/
+       /*NEWS*/
 #news h1{
     color: #000;
     margin-top: 200px;
@@ -147,6 +153,7 @@ table{
     font-size: 15px;
     margin: 0 auto;
     margin-top: 100px;
+    background-color: #fff;
 }
 
 table h1{
@@ -157,23 +164,14 @@ table th{
   padding : 10px 40px;
 }
 
-table td{
-  
- }
-
 th,td{
   border:solid 0.1px #aaaaaa;
 }
 
 th{
   color:white; 
-  background-color: #ef9d6a; 
+  background-color: #007095; 
 }
-
-
-
-
-
 
 #about h1{
     color: #000;
@@ -230,28 +228,6 @@ th{
       float: left; 
 }
 
- 
-#about a {
-    display: block;
-    position: relative;
-    top: 100px;
-    text-align: center;
-    text-decoration: none;
-    padding: 7px 14px;
-    margin: 0px 440px;
-    background-color: #182b2e;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 700;
-    transition: 1s; 
-}
-    
-#about a:hover {
-      color: #182b2e;
-      border: 1px solid #182b2e;
-      background-color: #fff; 
-}
-
 #about .box-access .right-access .right-access-common h2 {
           float: left;
           display: block;
@@ -259,11 +235,11 @@ th{
           left: 18%;
           line-height: 50px;
           font-size: 30px; 
-          margin-top: 40px;
+          margin-top: 70px;
 }
 
 #about .box-access .right-access .right-access-common img{
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
          /*MENBER*/
@@ -286,6 +262,49 @@ th{
     position: relative;
     width: 100%;
 }*/
+
+section.md_main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.md_main .md_contents{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: none;
+    z-index: 9999;
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+h3{
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.md_contents md01 img{
+    width: 30%;
+}
 
 .box-list{
   list-style: none;
@@ -380,7 +399,7 @@ img{
 ul li:last-child{
   margin-right:0;
 }
-img{
+#photo img{
   width: 100%
 }
 
@@ -396,12 +415,12 @@ img{
 #container{
     margin: 0 auto;
     overflow: hidden;
-    width: 1200px;
-    
+    width:1200px;
+    z-index: 2147483647;
 }
 .grid{
     margin: 2px;
-    background: #ffb21a;
+    background: #007095;
     float: left;
 }
 .col1 {width: 230px;}
@@ -409,26 +428,84 @@ img{
 .col3 {width: 300px;}
 .col4 {width: 580px;}
 
+/*背景*/
+
+#triangle-left1 {
+      width: 0;
+      height: 0;
+      border-top: 500px solid transparent;
+      border-right: 1500px solid red;
+      border-bottom: 500px solid transparent;
+    }
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-left: 1410px solid #ffe877;
+}
+  
+#triangle-left3 {
+      width: 0;
+      height: 0;
+      border-top: 500px solid transparent;
+      border-right: 1500px solid #007095;
+      border-bottom: 500px solid transparent;
+      margin-top: 00px;
+    }
+
+#triangle2 {
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-left: 1410px solid #fec620;
+}
+
+#triangle-left1 {
+      width: 0;
+      height: 0;
+      border-top: 500px solid transparent;
+      border-right: 1500px solid red;
+      border-bottom: 500px solid transparent;
+    }
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-left: 1410px solid #ffe877;
+}
+
+#triangle2 {
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-left: 1410px solid #fec620;
+}
+  
+
    /*footer*/
 footer {
   width: 100%;
   margin: 0px auto;
-  margin-top: 200px;
+  margin-bottom: 0pxs;
+  margin-top: 100px;
   padding: 30px 0px;
   text-align: center;
-  background-color: #ffb21a;
+  background-color: #007095;
   color: #fff;
   font-weight: 700;
   font-size: 14px; }
 
-
-
-
-
-
+ @media screen and (max-width: 499px) { 
+     
+}
 
 /*モーダル 内容*/
-
 
 /*
 #mask {
@@ -447,31 +524,3 @@ footer {
   display: none;
 }
 */
-
-section.md_main{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 99999999;
-    background: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-}
-
-.md_main .md_contents{
-    position: relative;
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    margin: 0 auto;
-    margin-top: 5%;
-    display: none;
-}
-
-
-
